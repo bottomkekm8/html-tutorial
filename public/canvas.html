@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+
+    <h1>Canvas</h1>
+    <p>Canvas (it's already plural trust me) are dynamic elements in html that can edit or create a picture in html using a script and the tag &lt;canvas&gt;. They often<br>have some sort of user interaction.</p>
+    <p>Here's some example code:</p>
+    <p>&lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;<br>
+        &lt;script&gt;<br>
+            var canvas=document.getElementById('myCanvas');<br>
+            var ctx=canvas.getContext('2d');<br>
+            ctx.fillStyle='#FF0000';<br>
+            ctx.fillRect(0,0,80,80);<br>
+        &lt;/script&gt;</p>
+
+
+    <canvas id="myCanvas"></canvas>
+        <script>
+         var canvas=document.getElementById('myCanvas');
+         var ctx=canvas.getContext('2d');
+         ctx.fillStyle='#FF0000';
+         ctx.fillRect(0,0,80,80);
+        </script>
+
+    <p>Of course, this only creates a non-interactive red square, but canvas can be used in many ways.</p>
+
+    <a href="index.html">Back to home</a>
+
+</body>
+</html>
